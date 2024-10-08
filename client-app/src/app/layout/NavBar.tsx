@@ -9,7 +9,7 @@ export default function Navbar({openForm}:Props){
     return(
         <Menu inverted fixed='top'>
             <Container>
-                <MenuItem header><img src='/assets/logo.png' style={{marginRight:'10px'}}/>Reactivities</MenuItem>
+                <MenuItem header><img src='/assets/logo.png' style={{marginRight:'10px'}}/>Sportify</MenuItem>
                 <MenuItem name='Activities'></MenuItem>
                 <MenuItem><Button onClick={openForm} positive content='Create Activity'/></MenuItem>
             </Container>
