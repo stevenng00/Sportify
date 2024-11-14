@@ -25,20 +25,9 @@ string sender = dbu.ExecuteWithOneReturn(@"SELECT User_Name FROM Users WHERE Use
 List<string> receiverCCEmails = new List<string>();
 List<string> receiversCC = new List<string>();
 
-string CCSQL = @"
-
-SELECT
-    Employee_Profile.Email
-FROM User_Alert_Detail
-INNER JOIN Employee_Profile ON Employee_Profile.Employee_Profile_ID = User_Alert_Detail.Employee_Profile_ID
-WHERE User_Alert_Detail.User_Alert_ID = '" + alertID + @"'
-        AND Employee_Profile.Email IS NOT NULL
-        AND Employee_Profile.Status = 'Active'
-";
-
 DataTable userDataCCTable = dbUtility.FillDataTable(CCSQL);
 
-if (userDataCCTable.Rows.Count > 0)
+if (userDataCCTable.Rows.Count > 0) 
 {
     foreach (DataRow CCrow in userDataCCTable.Rows)    
     {
