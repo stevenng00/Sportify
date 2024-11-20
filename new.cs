@@ -107,7 +107,7 @@ foreach (int rno in selrows)
             url += "&POID=" + POID;
             url += "&DirectSave=Yes";
             url += "&Preview=No";
-            url += "&SendAsEmail=Yes";
+            url += "&SendAsEmail=Yes"; 
             url += "&FileName=" + PONo;
 
             content = content + "Best Regards,<br/>";
