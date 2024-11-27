@@ -105,7 +105,7 @@ foreach (int rno in selrows)
             url += "&ShowParameter=False";
             url += "&ExportType=PDF";
             url += "&POID=" + POID;
-            url += "&DirectSave=Yes";
+            url += "&DirectSave=Yes"; 
             url += "&Preview=No";
             url += "&SendAsEmail=Yes"; 
             url += "&FileName=" + PONo;
