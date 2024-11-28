@@ -99,7 +99,7 @@ foreach (int rno in selrows)
        }
 
         if (status == "Approved")
-        {
+        { 
             string url = "../../Tools/Functional/Reporting/SQLReportPreview.aspx?";
             url += "ReportName=" + reportName;
             url += "&ShowParameter=False";
